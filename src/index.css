@@ -1,0 +1,16 @@
+html, body, #root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  min-width: 375px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: auto;
+}
