@@ -1,0 +1,9 @@
+{
+  "navigation": {
+    "signOut": "Sign Out",
+    "signIn": "Sign In"
+  },
+  "footer": {
+    "copyright": "Copyright 2023 Argent Bank"
+  }
+}
