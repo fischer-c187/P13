@@ -1,0 +1,10 @@
+:root {
+  --border-color: #ccc;
+}
+
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 2px solid var(--border-color);
+  margin-top: auto;
+}
