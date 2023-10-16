@@ -1,11 +1,11 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import navigationEN from '../locales/en/navigation.json';
+import appLayoutEN from '../locales/en/appLayout.json';
 
 const resources = {
   en: {
-    navigation: navigationEN,
+    appLayout: appLayoutEN,
   },
 };
 
