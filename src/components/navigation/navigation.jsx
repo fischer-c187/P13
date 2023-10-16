@@ -18,7 +18,7 @@ import styles from './navigation.module.css';
  * 
  */
 function Navigation({ navigationItems }) {
-  const { t } = useTranslation('navigation');
+  const { t } = useTranslation('appLayout');
 
   return (
     <nav>
@@ -32,7 +32,7 @@ function Navigation({ navigationItems }) {
               />
             )}
             <Link to={item.link} className={styles.navigation__link}>
-              {item?.textKey ? t(item.textKey) : item.text}
+              {item?.textKey ? t(`navigation.${item.textKey}`) : item.text}
             </Link>
           </li>
         ))}
