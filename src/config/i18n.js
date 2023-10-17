@@ -2,10 +2,12 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import appLayoutEN from '../locales/en/appLayout.json';
+import errorMessageEN from '../locales/en/errorMessage.json';
 
 const resources = {
   en: {
     appLayout: appLayoutEN,
+    errorMessage: errorMessageEN,
   },
 };
 
