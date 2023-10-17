@@ -1,0 +1,14 @@
+.container {
+  margin: 40vh auto 0;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.title {
+  font-size: 6rem;
+}
+
+.link {
+  color: inherit;
+  font-size: 1.25rem;
+}
