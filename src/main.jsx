@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './config/i18n.js';
+
+import App from './App.jsx';
 
 import './index.css';
 import './styles/reset.css';
