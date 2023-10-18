@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "promotedContent": "Promoted Content",
+    "subtitles": {
+      "noFees": "No fees.",
+      "noMinimumDeposit": "No minimum deposit.",
+      "highInterestRates": "High interest rates."
+    },
+    "text": "Open a savings account with Argent Bank today!"
+  },
+  "features": {
+    "priority": {
+      "title": "You are our #1 priority",
+      "text": "Need to talk to a representative? You can get in touch through our 24/7chat or through a phone call in less than 5 minutes."
+    },
+    "savings": {
+      "title": "More savings means higher rates",
+      "text": "The more you save with us, the higher your interest rate will be!"
+    },
+    "security": {
+      "title": "Security you can trust",
+      "text": "We use top of the line encryption to make sure your data and money is always safe."
+    }
+  }
+}
