@@ -1,0 +1,58 @@
+:root {
+  --feature-border-color: #00bc77;
+  --feature-title-color: #222;
+  --feature-text-color: #2c3e50;
+}
+
+.card {
+  text-align: center;
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.iconWrapper {
+  overflow: hidden;
+}
+
+.icon {
+  margin: auto;
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid var(--feature-border-color);
+  padding: 1rem;
+  animation: bottomToTop 800ms ease-in;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--feature-title-color);
+  font-weight: bold;
+  margin: 0.75rem;
+}
+
+.text {
+  color: var(--feature-text-color);
+}
+
+.fadeAnimation {
+  animation: 500ms fade 300ms ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes bottomToTop {
+  from { 
+    transform: translateY(150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
