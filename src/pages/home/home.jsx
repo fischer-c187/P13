@@ -1,6 +1,13 @@
-function Home() {
+import Hero from '../../components/hero/hero';
+import Features from '../../layouts/features/features';
 
-  return ;
+function Home() {
+  return (
+    <>
+      <Hero />
+      <Features />
+    </>
+  );
 }
 
 export default Home;
