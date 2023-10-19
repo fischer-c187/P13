@@ -1,0 +1,70 @@
+:root {
+  --loginForm-btn-color: hsla(158, 100%, 37%, 1);
+  --loginForm-btn-hover-color: hsla(158, 100%, 40%, 1);
+  --loginForm-btn-active-color: hsla(158, 100%, 32%, 1);
+}
+
+.containerForm {
+  width: 300px;
+  padding: 2rem;
+  background-color: white;
+  height: fit-content;
+  text-align: center;
+}
+
+.title {
+  margin: 1rem 0;
+}
+
+.form {
+  text-align: left;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.input {
+  font-size: 1.2rem;
+  padding: 0.25rem;
+}
+
+.inputLabel {
+  font-weight: bold;
+}
+
+.checkboxWrapper {
+  display: flex;
+  gap: 0.25rem;
+  margin: 1rem 0;
+}
+
+.checkbox {
+  align-self: baseline;
+  margin-top: 0.15rem;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--loginForm-btn-color);
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: var(--loginForm-btn-hover-color);
+}
+
+.btn:active {
+  background-color: var(--loginForm-btn-active-color);
+}
+
+
