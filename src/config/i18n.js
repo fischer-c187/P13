@@ -4,12 +4,14 @@ import { initReactI18next } from 'react-i18next';
 import appLayoutEN from '../locales/en/appLayout.json';
 import errorMessageEN from '../locales/en/errorMessage.json';
 import homePageEN from '../locales/en/homePage.json';
+import loginPageEN from '../locales/en/loginPage.json';
 
 const resources = {
   en: {
     appLayout: appLayoutEN,
     errorMessage: errorMessageEN,
     homePage: homePageEN,
+    loginPage: loginPageEN,
   },
 };
 
