@@ -1,0 +1,10 @@
+.checkboxWrapper {
+  display: flex;
+  gap: 0.25rem;
+  margin: 1rem 0;
+}
+
+.checkbox {
+  align-self: baseline;
+  margin-top: 0.15rem;
+}
