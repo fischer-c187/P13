@@ -47,24 +47,11 @@
 }
 
 .btn {
+  composes: btnUnderline from '../../styles/btn.module.css';
   width: 100%;
-  background-color: var(--loginForm-btn-color);
   padding: 0.5rem;
   font-size: 1.1rem;
-  font-weight: bold;
-  color: white;
-  border: none;
-  text-decoration: underline;
-  cursor: pointer;
-  box-shadow: none;
 }
 
-.btn:hover {
-  background-color: var(--loginForm-btn-hover-color);
-}
-
-.btn:active {
-  background-color: var(--loginForm-btn-active-color);
-}
 
 
