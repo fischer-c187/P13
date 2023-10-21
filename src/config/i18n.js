@@ -5,6 +5,7 @@ import appLayoutEN from '../locales/en/appLayout.json';
 import errorMessageEN from '../locales/en/errorMessage.json';
 import homePageEN from '../locales/en/homePage.json';
 import loginPageEN from '../locales/en/loginPage.json';
+import userPageEN from '../locales/en/userPage.json';
 
 const resources = {
   en: {
@@ -12,6 +13,7 @@ const resources = {
     errorMessage: errorMessageEN,
     homePage: homePageEN,
     loginPage: loginPageEN,
+    userPage: userPageEN,
   },
 };
 

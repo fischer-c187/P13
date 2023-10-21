@@ -1,11 +1,14 @@
 import styles from './inputField.module.css';
 
-function InputField({ name, label, handleChange, value }) {
+function InputField({ name, label, handleChange, value, placeholder='' }) {
+
   return (
     <div className={styles.inputWrapper}>
-      <label htmlFor={name} className={styles.inputLabel}>
-        {label}
-      </label>
+      {label && (
+        <label htmlFor={name} className={styles.inputLabel}>
+          {label}
+        </label>
+      )}
       <input
         onChange={handleChange}
         name={name}
@@ -13,6 +16,7 @@ function InputField({ name, label, handleChange, value }) {
         type='text'
         value={value}
         className={styles.input}
+        placeholder={placeholder}
         required
       />
     </div>

@@ -1,0 +1,17 @@
+{
+  "welcomeMessage": "Welcome back",
+  "editBtn": "Edit Name",
+  "saveBtn": "Save",
+  "cancelBtn": "Cancel",
+  "currency": "$",
+  "transaction": {
+    "availableBalance": "Available Balance",
+    "currentBalance": "Current Balance",
+    "viewButton": "View transactions"
+  },
+  "transactionType": {
+    "checking": "Argent Bank Checking (x8349)",
+    "saving": "Argent Bank Savings (x6712)",
+    "creditCard": "Argent Bank Credit Card (x8349)"
+  }
+}
