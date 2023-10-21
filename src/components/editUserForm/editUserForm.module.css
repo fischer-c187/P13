@@ -1,0 +1,21 @@
+.form {
+  width: max(50%, 350px);
+  margin: auto;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  composes: btnUser from '../../styles/btn.module.css';
+  width: 100px;
+}

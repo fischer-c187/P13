@@ -1,0 +1,9 @@
+.header {
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  composes: btnUser from '../../styles/btn.module.css';
+  margin-top: 1.5rem;
+}
