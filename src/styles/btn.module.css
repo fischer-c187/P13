@@ -1,0 +1,28 @@
+.btn {
+  background-color: var(--loginForm-btn-color);
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: var(--loginForm-btn-hover-color);
+}
+
+.btn:active {
+  background-color: var(--loginForm-btn-active-color);
+}
+
+.btnUnderline {
+  composes: btn;
+  text-decoration: underline;
+}
+
+.btnUser {
+  composes: btn;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
