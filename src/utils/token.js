@@ -1,20 +1,30 @@
+const tokenKey = 'userToken';
+
 export function existingToken() {
   return !!(
-    localStorage.getItem('userToken') ||
-    sessionStorage.getItem('userToken') ||
+    localStorage.getItem(tokenKey) ||
+    sessionStorage.getItem(tokenKey) ||
     null
   );
 }
 
 export function getTokenInLocalStorage() {
   return (
-    localStorage.getItem('userToken') ||
-    sessionStorage.getItem('userToken') ||
+    localStorage.getItem(tokenKey) ||
+    sessionStorage.getItem(tokenKey) ||
     null
   );
 }
 
 export function removeToken() {
-  localStorage.removeItem('userToken');
-  sessionStorage.removeItem('userToken');
+  localStorage.removeItem(tokenKey);
+  sessionStorage.removeItem(tokenKey);
+}
+
+export function addTokenToLocalStorage(token) {
+  localStorage.setItem(tokenKey, token);
+}
+
+export function addTokenToSessionStorage(token) {
+  sessionStorage.setItem(tokenKey, token);
 }
