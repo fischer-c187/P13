@@ -19,3 +19,17 @@
   composes: btnUser from '../../styles/btn.module.css';
   width: 100px;
 }
+
+.btn:disabled {
+  background-color: grey;
+  cursor: default;
+}
+
+.btn:hover:disabled {
+  background-color: grey;
+}
+
+.errorWrapper {
+  width: clamp(350px, 100%, 555px);
+  margin: auto;
+}
