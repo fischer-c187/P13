@@ -1,4 +1,5 @@
 {
+  "pageTitle": "Argent Bank - User",
   "welcomeMessage": "Welcome back",
   "editBtn": "Edit Name",
   "saveBtn": "Save",
@@ -13,5 +14,9 @@
     "checking": "Argent Bank Checking (x8349)",
     "saving": "Argent Bank Savings (x6712)",
     "creditCard": "Argent Bank Credit Card (x8349)"
+  },
+  "errors": {
+    "invalidFields": "Invalid fields. Please double-check your input.",
+    "internalServerError": "An internal server error occurred. Please try again later."
   }
 }
