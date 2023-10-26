@@ -10,9 +10,7 @@ export function existingToken() {
 
 export function getTokenInLocalStorage() {
   return (
-    localStorage.getItem(tokenKey) ||
-    sessionStorage.getItem(tokenKey) ||
-    null
+    localStorage.getItem(tokenKey) || sessionStorage.getItem(tokenKey) || null
   );
 }
 
@@ -21,10 +19,18 @@ export function removeToken() {
   sessionStorage.removeItem(tokenKey);
 }
 
-export function addTokenToLocalStorage(token) {
+function addTokenToLocalStorage(token) {
   localStorage.setItem(tokenKey, token);
 }
 
-export function addTokenToSessionStorage(token) {
+function addTokenToSessionStorage(token) {
   sessionStorage.setItem(tokenKey, token);
+}
+
+export function setTokenInStorage(token, rememberMe) {
+  if (rememberMe) {
+    addTokenToLocalStorage(token);
+  } else {
+    addTokenToSessionStorage(token);
+  }
 }
