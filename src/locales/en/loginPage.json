@@ -3,5 +3,9 @@
   "labelUsername": "Username",
   "labelPassword": "Password",
   "labelRememberMe": "Remember me",
-  "buttonText": "Sign In"
+  "buttonText": "Sign In",
+  "errors": {
+    "userNotFound": "User not found!",
+    "internalServer": "An internal error has occurred. Please try again later."
+  }
 }
