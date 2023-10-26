@@ -1,3 +1,5 @@
+import { logout } from '../store/slice/authSlice';
+
 export const navigationUserNotConnected = {
   signIn: {
     textKey: 'signIn',
@@ -6,7 +8,7 @@ export const navigationUserNotConnected = {
   },
 };
 
-export const navigationUserConnected = (name) => ({
+export const navigationUserConnected = (name, dispatch, navigate) => ({
   user: {
     text: name,
     link: '/user',
@@ -16,5 +18,10 @@ export const navigationUserConnected = (name) => ({
     textKey: 'signOut',
     link: '/',
     icon: 'fa-solid fa-right-from-bracket',
+    onClick: (event) => {
+      event.preventDefault();
+      dispatch(logout());
+      navigate(event.target.getAttribute('href'));
+    },
   },
 });
