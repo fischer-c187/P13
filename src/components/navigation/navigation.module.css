@@ -14,6 +14,7 @@
   text-decoration: none;
   font-weight: 700;
   position: relative;
+  color: inherit;
 }
 
 .navigation__link::after {

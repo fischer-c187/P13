@@ -5,6 +5,14 @@ import EditUserForm from '../editUserForm/editUserForm';
 
 import styles from './userPresentation.module.css';
 
+/**
+ * A header component displaying a welcome message and the user's name, 
+ * along with an "Edit" button that toggles an inline edit form.
+ * 
+ * @param {string} firstname - The first name of the user
+ * @param {string} lastname - The last name of the user
+ * 
+ */
 function UserPresentation({ firstname, lastname }) {
   const { t } = useTranslation('userPage');
   const [editMode, setEditMode] = useState(false);
@@ -22,8 +30,8 @@ function UserPresentation({ firstname, lastname }) {
       </h1>
       {editMode && (
         <EditUserForm
-          firstname={firstname}
-          lastname={lastname}
+          firstName={firstname}
+          lastName={lastname}
           handleClickCancel={handleClickEditBtn}
         />
       )}
