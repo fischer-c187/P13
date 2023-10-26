@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { getTokenInLocalStorage } from './authSlice';
+import { getTokenInLocalStorage } from '../../utils/token';
 
 export const apiSlice = createApi({
   reducerPath: 'userApi',
@@ -21,20 +21,22 @@ export const apiSlice = createApi({
     getToken: builder.query({
       query: queryToken,
       transformResponse: transformResponseToken,
+      transformErrorResponse: transformErrorQueryToken,
     }),
+    updateUser: builder.mutation({
+      query: mutationUpdateUser,
+      transformErrorResponse: transformErrorUpdateUser,
+    })
   }),
 });
 
+//query and mutation
 function queryToken(credentials) {
   return {
     url: 'user/login',
     method: 'POST',
     body: credentials,
   };
-}
-
-function transformResponseToken(response) {
-  return response.body.token;
 }
 
 function queryUserInfo() {
@@ -44,6 +46,19 @@ function queryUserInfo() {
   };
 }
 
+function mutationUpdateUser(user) {
+  return {
+    url: 'user/profile',
+    method: 'PUT',
+    body: user,
+  };
+}
+
+// transform response 
+function transformResponseToken(response) {
+  return response.body.token;
+}
+
 function transformResponseUserInfo(response) {
   return {
     firstName: response.body.firstName,
@@ -51,4 +66,24 @@ function transformResponseUserInfo(response) {
   };
 }
 
-export const { useGetUserInfoQuery, useLazyGetTokenQuery } = apiSlice;
+// transform error
+function transformErrorQueryToken(response) {
+  if(response.status === 400) {
+    response.errorKey = 'userNotFound';
+  } else {
+    response.errorKey = 'internalServer';
+  }
+  return response;
+}
+
+function transformErrorUpdateUser(response) {
+  if(response.status === 400) {
+    response.errorKey = 'invalidFields';
+  } else {
+    response.errorKey = 'internalServerError';
+  }
+
+  return response;
+}
+
+export const { useGetUserInfoQuery, useLazyGetTokenQuery, useUpdateUserMutation } = apiSlice;
