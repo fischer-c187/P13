@@ -3,7 +3,7 @@ import { logout } from '../store/slice/authSlice';
 export const navigationUserNotConnected = {
   signIn: {
     textKey: 'signIn',
-    link: '/sign-in',
+    link: '/login',
     icon: 'fa-solid fa-circle-user',
   },
 };
@@ -11,7 +11,7 @@ export const navigationUserNotConnected = {
 export const navigationUserConnected = (name, dispatch, navigate) => ({
   user: {
     text: name,
-    link: '/user',
+    link: '/profile',
     icon: 'fa-solid fa-circle-user',
   },
   signOut: {

@@ -50,7 +50,7 @@ function LoginForm() {
 
   useEffect(() => {
     if (isAuth) {
-      navigate('/user');
+      navigate('/profile');
     }
   }, [isAuth, navigate]);
 

@@ -19,10 +19,10 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<AppLayout />} errorElement={<ErrorPage />}>
         <Route index element={<Home />} />
-        <Route path='sign-in' element={<SignIn />} />
+        <Route path='login' element={<SignIn />} />
         
         <Route element={<ProtectedRoute />}>
-          <Route path='user' element={<User />} />
+          <Route path='profile' element={<User />} />
         </Route>
 
         <Route path='*' element={<PageNotFound />} />
